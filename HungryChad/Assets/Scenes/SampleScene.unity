@@ -396,7 +396,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 71.21571
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -869,10 +869,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bde532dce43ffd4b9609e87bf69928a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnDuration: 5
-  spawnDelay: 2
+  spawnDuration: 2
+  spawnDelay: 5
   spawnItems:
   - {fileID: 11400000, guid: e26768c2494381f48920583928b0af9a, type: 2}
+  - {fileID: 11400000, guid: 2f9328bb099075342a1a3c74d7ea5eb9, type: 2}
+  - {fileID: 11400000, guid: 2b74d310bee6b104e8e40f0399c41a47, type: 2}
+  - {fileID: 11400000, guid: d0625128c74ceb942b03f36b097beca0, type: 2}
+  - {fileID: 11400000, guid: 8dd860ca449fc0148947d51dfa8898db, type: 2}
+  - {fileID: 11400000, guid: 1b8375df1472db847a4a3b18adb971f8, type: 2}
+  - {fileID: 11400000, guid: 920f71df505e017478dd027c3e8417c8, type: 2}
+  - {fileID: 11400000, guid: 54a5798d6ff273d4ea408950dcc32b8a, type: 2}
+  - {fileID: 11400000, guid: bb017d49b27c1bb47a91f599e0b4e233, type: 2}
+  - {fileID: 11400000, guid: d101ec9b1f0cdd54c99da5d0acef0fb0, type: 2}
 --- !u!4 &2062961595
 Transform:
   m_ObjectHideFlags: 0
