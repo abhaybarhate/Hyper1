@@ -19,21 +19,32 @@ public class PlayerController : MonoBehaviour{
     // Update is called once per frame
     void Update(){
 
-        MovePlayer();
+        if (Input.GetMouseButtonDown(0)) {
+            MovePlayer();
+        }
         
     }
 
+    //void MovePlayer() {
+    //    RaycastHit hitInfo;
+    //    if(Input.touchCount > 0) {
+    //        Touch touch = Input.GetTouch(0);
+    //        Ray ray = Camera.main.ScreenPointToRay(touch.position);
+    //        if(Physics.Raycast(ray, out hitInfo)) {
+    //            playerAgent.SetDestination(hitInfo.point);
+    //            playerAgent.speed = playerSpeed;
+    //            playerAgent.angularSpeed = playerEnergy;
+    //        }
+            
+    //    }
+    //}
     void MovePlayer() {
         RaycastHit hitInfo;
-        if(Input.touchCount > 0) {
-            Touch touch = Input.GetTouch(0);
-            Ray ray = Camera.main.ScreenPointToRay(touch.position);
-            if(Physics.Raycast(ray, out hitInfo)) {
-                playerAgent.SetDestination(hitInfo.point);
-                playerAgent.speed = playerSpeed;
-                playerAgent.angularSpeed = playerEnergy;
-            }
-            
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if(Physics.Raycast(ray, out hitInfo)) {
+            playerAgent.SetDestination(hitInfo.point);
+            playerAgent.speed = playerSpeed;
+            playerAgent.angularSpeed = playerEnergy;
         }
     }
 

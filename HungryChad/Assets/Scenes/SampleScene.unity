@@ -869,8 +869,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bde532dce43ffd4b9609e87bf69928a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnDuration: 2
-  spawnDelay: 5
+  spawnDuration: 0.2
+  spawnDelay: 1
   spawnItems:
   - {fileID: 11400000, guid: e26768c2494381f48920583928b0af9a, type: 2}
   - {fileID: 11400000, guid: 2f9328bb099075342a1a3c74d7ea5eb9, type: 2}
